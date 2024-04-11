@@ -1,4 +1,4 @@
-public interface IRoomRepository {
-    void Add(Room room);
-    List<Room> Get();
+public interface ICardRepository {
+    void Add(Card card);
+    List<Card> Get();
 }
