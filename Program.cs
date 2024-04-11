@@ -1,7 +1,10 @@
+using OpenAI.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.Configure<OpenAIConfig>(builder.Configuration.GetSection("OpenAi"));
 
 var app = builder.Build();
 
